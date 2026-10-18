@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocMind</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>DocMind</h1>
+  <p class="tagline">Ask questions about your own documents. Answers cite their sources.</p>
+  <span id="mode" class="badge" hidden></span>
+</header>
+
+<main>
+  <section class="panel" aria-labelledby="docs-heading">
+    <h2 id="docs-heading">Documents</h2>
+    <form id="upload-form">
+      <input id="file" name="file" type="file" accept=".txt,.md,.markdown,.pdf" required>
+      <button type="submit">Upload</button>
+    </form>
+    <p class="hint">.txt, .md or .pdf, up to 5&nbsp;MB.</p>
+    <p id="upload-status" class="status" role="status"></p>
+    <ul id="documents" class="documents"></ul>
+  </section>
+
+  <section class="panel" aria-labelledby="ask-heading">
+    <h2 id="ask-heading">Ask</h2>
+    <form id="ask-form">
+      <textarea id="question" rows="3" maxlength="1000" required
+                placeholder="e.g. How many days of annual leave can I carry forward?"></textarea>
+      <div class="row">
+        <label>Passages <input id="topk" type="number" min="1" max="8" value="4"></label>
+        <button type="submit">Ask</button>
+      </div>
+    </form>
+    <div id="result" hidden>
+      <div id="answer" class="answer"></div>
+      <p id="usage" class="hint"></p>
+      <h3>Sources</h3>
+      <ol id="citations" class="citations"></ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="swagger-ui.html">API docs</a> · <a href="actuator/health">Health</a>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
