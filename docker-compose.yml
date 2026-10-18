@@ -1,0 +1,16 @@
+services:
+  docmind:
+    build: .
+    image: docmind:local
+    ports:
+      - "8080:8080"
+    environment:
+      # Passed through from your shell or .env; leave unset for retrieval-only mode.
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      DOCMIND_MODEL: ${DOCMIND_MODEL:-claude-sonnet-5-5}
+    volumes:
+      - docmind-data:/data
+    restart: unless-stopped
+
+volumes:
+  docmind-data:
