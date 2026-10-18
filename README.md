@@ -7,6 +7,11 @@
 
 **Ask questions about your own documents and get answers that cite their sources.**
 
+> **Status — work in progress**
+> - Developed with **AI-assisted development** (Claude Code); design, review and testing by me.
+> - All unit and API tests pass locally, and retrieval-only mode (no API key) was smoke-tested.
+> - **End-to-end testing is pending:** a live Claude API call and the Docker build have not been tested yet.
+
 DocMind is a retrieval-augmented generation (RAG) service written in Java. Upload policies, guides
 or notes (`.txt`, `.md`, `.pdf`). DocMind splits them into chunks, indexes them with Apache Lucene,
 and answers questions with Claude using only the passages it retrieved. Every claim in an answer
