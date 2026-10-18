@@ -1,0 +1,29 @@
+EXAMPLE CORP - IT ONBOARDING GUIDE
+(Fictional sample document for the DocMind demo.)
+
+WELCOME
+This guide explains how to set up your laptop, accounts and access during your first week. If anything here does not work, contact the IT Service Desk through the self-service portal or on the internal chat channel #it-help. The Service Desk is staffed from 08:00 to 20:00 on working days.
+
+DAY ONE: YOUR LAPTOP
+Your laptop is pre-configured with the standard image and disk encryption is already enabled. On first login you will be asked to set a new password. Passwords must be at least 14 characters long and are changed every 180 days. Do not reuse a password from any other service.
+
+MULTI-FACTOR AUTHENTICATION
+Multi-factor authentication (MFA) is mandatory for every account. Install the approved authenticator app on your phone and register it during the first-login wizard. If you lose your phone, call the Service Desk immediately so that your MFA tokens can be revoked. SMS codes are not accepted as a second factor.
+
+VPN ACCESS
+You need the VPN to reach internal systems from outside the office. The VPN client is installed on every laptop. Sign in with your company email address and approve the MFA prompt. The VPN disconnects automatically after 12 hours, after which you simply reconnect. Split tunnelling is disabled, so all traffic goes through the company network while the VPN is connected.
+
+EMAIL AND CALENDAR
+Your mailbox is created before your start date and has a quota of 50 GB. Shared mailboxes for your team are added by your line manager through an access request.
+
+REQUESTING SOFTWARE AND ACCESS
+Software that is not part of the standard image must be requested through the self-service portal. Most requests are approved by your line manager within 2 working days. Administrator rights on laptops are not granted by default; developers can request a time-limited elevation for up to 8 hours at a time.
+
+SECURITY TRAINING
+All new joiners must complete the security awareness course within their first 14 days. The course takes about 45 minutes. Access to production systems is only granted after the course is completed.
+
+REPORTING A SECURITY INCIDENT
+If you suspect phishing, a lost device or any other security incident, report it straight away using the "Report phishing" button in your mail client or by calling the Service Desk. Never forward a suspicious email to colleagues.
+
+HARDWARE SUPPORT
+Laptops are replaced every 4 years. Accessories such as monitors, keyboards and headsets can be ordered through the self-service portal. Faulty hardware is swapped at the IT desk on the second floor, usually on the same day.
